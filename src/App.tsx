@@ -1,5 +1,6 @@
 import { createColumnHelper, flexRender, getCoreRowModel, useReactTable } from "@tanstack/react-table";
 import Example from "./example";
+import { Table } from "./dyanamic";
 
 export default function App() {
 
@@ -69,6 +70,7 @@ export default function App() {
       </table>
 
       <Example />
+      <Table />
     </div>
   );
 }

@@ -79,7 +79,7 @@ export default function Table({ columns, data, }: TableProps<Show>) {
             <table border={1} cellPadding={10} cellSpacing={0}>
                 <thead>
                     {/*use the getHeaderGRoup function to render headers:*/}
-                    {table.getHeaderGroups().map((headerGroup) => (
+                    {table?.getHeaderGroups()?.map((headerGroup) => (
                         <tr key={headerGroup.id}>
                             {headerGroup.headers.map((header) => (
                                 <th key={header.id} colSpan={header.colSpan}>
